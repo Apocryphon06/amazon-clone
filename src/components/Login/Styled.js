@@ -42,13 +42,16 @@ export const Label = styled.p`
   font-size: 14px;
   font-weight: bold;
 `;
+export const Text = styled.p`
+  font-size: 14px;
+`;
 
 export const PasswordLabel = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 10px;
-  margin-bottom:-10px;
+  margin-bottom: -10px;
 `;
 
 export const PasswordText = styled.p`

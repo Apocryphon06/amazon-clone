@@ -12,6 +12,7 @@ import {
   PasswordLabel,
   PasswordText,
   Query,
+  Text,
   Wrapper,
 } from "./Styled.js";
 import amazonLogo from "./images/logo.png";
@@ -41,9 +42,9 @@ function Login() {
         <Heading>Sign in</Heading>
         {bool ? (
           <PasswordLabel>
-            <PasswordText>
+            <Text>
               {uname} <LinkText onClick={() => setBool(false)}>Change</LinkText>
-            </PasswordText>
+            </Text>
           </PasswordLabel>
         ) : (
           <></>
@@ -90,10 +91,16 @@ function Login() {
           <LinkText>Privacy Notice</LinkText>.
         </Notice>
       </Wrapper>
-      <Query>New to Amazon?</Query>
-      <Button bg="#F5F5F5" bgHover="#F0F0F0" margin="0">
-        Create your Amazon account
-      </Button>
+      {bool ? (
+        <></>
+      ) : (
+        <>
+          <Query>New to Amazon?</Query>
+          <Button bg="#F5F5F5" bgHover="#F0F0F0" margin="0">
+            Create your Amazon account
+          </Button>
+        </>
+      )}
     </Container>
   );
 }
