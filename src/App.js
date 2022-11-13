@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import classes from "./App.module.css";
+import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 
 function App() {
@@ -17,9 +18,7 @@ function App() {
       <Route
         path="/"
         element={
-          <div className={classes.container}>
-            <h1>Home</h1>
-          </div>
+          <Home/>
         }
       ></Route>
     </Routes>
