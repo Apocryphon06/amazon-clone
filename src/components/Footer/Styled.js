@@ -7,11 +7,9 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  bottom: 0;
   width: 100%;
   color: white;
   display: flex;
-  position: absolute;
   flex-direction: column;
 `;
 
@@ -33,7 +31,6 @@ export const AboutWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   background-color: #232f3e;
-  border-bottom: 0.5px solid #dfdfdf;
 `;
 
 export const ItemWrapper = styled.div`
@@ -41,7 +38,7 @@ export const ItemWrapper = styled.div`
   flex-direction: column;
   margin: 20px 50px;
   @media (max-width: 768px) {
-    margin: 20px 20px;  
+    margin: 20px 10px;
   }
   line-height: 1.8em;
 `;

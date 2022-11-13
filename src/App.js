@@ -1,8 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import classes from "./App.module.css";
-import Home from "./components/Home/Home";
+
 import Login from "./components/Login/Login";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
