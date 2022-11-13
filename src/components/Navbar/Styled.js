@@ -75,7 +75,7 @@ export const SearchContainer = styled.div`
 `;
 
 export const Search = styled.input`
-  width: 500px;
+  width: 590px;
   padding: 10px;
   font-size: 14px;
 `;
