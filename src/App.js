@@ -14,6 +14,14 @@ function App() {
           </div>
         }
       ></Route>
+      <Route
+        path="/"
+        element={
+          <div className={classes.container}>
+            <h1>Home</h1>
+          </div>
+        }
+      ></Route>
     </Routes>
   );
 }

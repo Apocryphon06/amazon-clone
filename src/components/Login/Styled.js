@@ -32,7 +32,7 @@ export const LinkText = styled.span`
   letter-spacing: -0.7px;
   cursor: pointer;
   &:hover {
-    color: orangered;
+    color: red;
     text-decoration: underline;
   }
 `;
@@ -43,8 +43,33 @@ export const Label = styled.p`
   font-weight: bold;
 `;
 
+export const PasswordLabel = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+  margin-bottom:-10px;
+`;
+
+export const PasswordText = styled.p`
+  font-size: 14px;
+  font-weight: bold;
+`;
+
+export const PasswordHelp = styled.p`
+  color: #00a8e1;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: -0.7px;
+  cursor: pointer;
+  &:hover {
+    color: red;
+    text-decoration: underline;
+  }
+`;
+
 export const Input = styled.input`
-  padding: 10px;
+  padding: 8px;
   margin: 10px;
   font-size: 12px;
   margin-bottom: 0;
@@ -79,7 +104,6 @@ export const Query = styled.div`
   font-size: 12px;
   font-weight: bold;
   color: #808080;
-  margin-top:10px;
-  margin-bottom:10px;
-
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
