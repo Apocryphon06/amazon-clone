@@ -3,3 +3,10 @@ export const test = () => {
     type: "TEST",
   };
 };
+
+export const setPath = (payload) => {
+  return {
+    type: "SET PATH",
+    payload: payload,
+  };
+};

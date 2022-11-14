@@ -4,11 +4,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  overflow: hidden;
 `;
 
 export const Wrapper = styled.div`
   top: 0;
-  position: absolute;
   width: 100%;
   padding: 10px;
   color: white;
@@ -141,7 +141,7 @@ export const Categories = styled.div`
   display: flex;
   flex-direction: row;
   background-color: #232f3e;
-  margin-top: 75px;
+  padding:0;
 `;
 
 export const List = styled.ul`

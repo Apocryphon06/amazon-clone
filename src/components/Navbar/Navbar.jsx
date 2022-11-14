@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Container,
   Wrapper,
@@ -25,12 +25,15 @@ import pin from "./images/placeholder.png";
 import search from "./images/search.png";
 import cart from "./images/cart.png";
 import flag from "./images/flag.png";
+import { PathContext } from "../../context/PathContext";
 
 function Navbar() {
+  // eslint-disable-next-line
+  const [path, setPath] = useContext(PathContext);
   return (
     <Container>
       <Wrapper>
-        <Brand src={brand} alt={brand} />
+        <Brand onClick={() => setPath("home")} src={brand} alt={brand} />
         <Location>
           <Pin src={pin} alt={pin} />
           <TextWrapper>
@@ -51,20 +54,20 @@ function Navbar() {
         </ItemWrapper>
 
         <ItemWrapper>
-          <TextWrapper>
+          <TextWrapper onClick={() => setPath("accounts")}>
             <PrimaryText>Hello, Hrithik</PrimaryText>
             <TextBold>Account & Lists</TextBold>
           </TextWrapper>
         </ItemWrapper>
 
         <ItemWrapper>
-          <TextWrapper>
+          <TextWrapper onClick={() => setPath("orders")}>
             <PrimaryText>Returns</PrimaryText>
             <TextBold>& Orders</TextBold>
           </TextWrapper>
         </ItemWrapper>
 
-        <ItemWrapper>
+        <ItemWrapper onClick={() => setPath("cart")}>
           <CartIcon src={cart} alt={cart} />
         </ItemWrapper>
       </Wrapper>

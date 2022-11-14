@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "./Styled";
 
 function Accounts() {
-  return <Container>Accounts</Container>;
+  useEffect(()=>{
+    document.title="Your Account"  
+  })
+  return <Container>Your Account</Container>;
 }
 
 export default Accounts;
