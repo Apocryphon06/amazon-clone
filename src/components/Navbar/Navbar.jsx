@@ -16,6 +16,9 @@ import {
   ItemWrapper,
   CartIcon,
   FlagIcon,
+  Categories,
+  List,
+  ListItem,
 } from "./Styled";
 import brand from "./images/amazon.png";
 import pin from "./images/placeholder.png";
@@ -65,6 +68,24 @@ function Navbar() {
           <CartIcon src={cart} alt={cart} />
         </ItemWrapper>
       </Wrapper>
+      <Categories>
+        <List>
+          <ListItem>All</ListItem>
+          <ListItem>Sell</ListItem>
+          <ListItem>Fresh</ListItem>
+          <ListItem>Today's Deals</ListItem>
+          <ListItem>Health, Household & Personal Care</ListItem>
+          <ListItem>Mobiles</ListItem>
+          <ListItem>Electronics</ListItem>
+          <ListItem>Prime</ListItem>
+          <ListItem>New Releases</ListItem>
+          <ListItem>Best Sellers</ListItem>
+          <ListItem>Gift Cards</ListItem>
+          <ListItem style={{ fontSize: "15px" }}>
+            Shopping made easy | Download the app
+          </ListItem>
+        </List>
+      </Categories>
     </Container>
   );
 }

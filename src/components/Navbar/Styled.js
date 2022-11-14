@@ -81,7 +81,7 @@ export const Search = styled.input`
 `;
 
 export const DropdownButton = styled.button`
-  width: 55px;
+  width: 50px;
   border: none;
   font-size: 12px;
   background-color: #dfdfdf;
@@ -97,7 +97,7 @@ export const SearchButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55px;
+  width: 50px;
   border: none;
   font-size: 12px;
   cursor: pointer;
@@ -132,7 +132,31 @@ export const CartIcon = styled.img`
 `;
 
 export const FlagIcon = styled.img`
-  width: 30px;
-  height: 30px;
-  
+  width: 20px;
+  height: 20px;
+`;
+
+export const Categories = styled.div`
+  color: white;
+  display: flex;
+  flex-direction: row;
+  background-color: #232f3e;
+  margin-top: 75px;
+`;
+
+export const List = styled.ul`
+  list-style: none;
+`;
+
+export const ListItem = styled.li`
+  display: inline;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid #232f3e;
+  &:hover {
+    border: 1px solid white;
+  }
 `;
