@@ -142,6 +142,9 @@ export const Categories = styled.div`
   flex-direction: row;
   background-color: #232f3e;
   padding:0;
+  @media(max-width:768px){
+    display: none;
+  }
 `;
 
 export const List = styled.ul`
@@ -150,6 +153,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   display: inline;
+  
   font-size: 13px;
   font-weight: bold;
   cursor: pointer;
