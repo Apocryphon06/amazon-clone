@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
 `;
 
 export const Heading = styled.p`
@@ -41,14 +40,40 @@ export const ImageIcon = styled.img`
 export const IWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
   border: 0.5px solid #808080;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 10px;
   cursor: pointer;
   &:hover {
-    background-color: #dfdfdf;
+    background-color: #F5F5F5;
+  }
+`;
+
+export const TIWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  border: 0.5px solid #808080;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 10px;
+`;
+
+export const TWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+  width: 260px;
+`;
+
+export const TSecondary = styled.div`
+  color: #188781;
+  font-size: 14px;
+  cursor: pointer;
+  &:hover {
+    color: orangered;
+    text-decoration: underline;
   }
 `;

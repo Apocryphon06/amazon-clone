@@ -16,6 +16,7 @@ import {
   Wrapper,
 } from "./Styled.js";
 import amazonLogo from "./images/logo.png";
+import { Link } from "react-router-dom";
 
 function Login() {
   useEffect(() => {
@@ -67,13 +68,10 @@ function Login() {
           <Input type="text" onChange={(e) => setUname(e.target.value)} />
         )}
         {bool ? (
-          <Button
-            onClick={checkInput}
-            bg="#ffd700"
-            bgHover="#ffd100"
-            margin="10"
-          >
-            Sign in
+          <Button bg="#ffd700" bgHover="#ffd100" margin="10">
+            <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+              Sign in
+            </Link>
           </Button>
         ) : (
           <Button
