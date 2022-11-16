@@ -31,6 +31,7 @@ import {
 } from "./Styled";
 
 import search from "./images/search.png";
+import product from "./images/god_of_war.jpg";
 
 function Orders() {
   useEffect(() => {
@@ -93,7 +94,7 @@ function Orders() {
           <DetailsRow>
             <OrderImageGroup>
               <TextBold>Shipped Sunday</TextBold>
-              <OrderImage />
+              <OrderImage src={product} alt={product} />
             </OrderImageGroup>
             <TextBlue>
               God Of War Ragnarok | Launch Edition | PS4 Game (PlayStation 4)
