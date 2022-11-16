@@ -120,6 +120,7 @@ export const OrderNav = styled.div`
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 10px;
+  line-height: 1.2em;
   border: 1px solid #dfdfdf;
 `;
 
@@ -145,6 +146,7 @@ export const TextBlue = styled.div`
   &:hover {
     cursor: pointer;
     color: orangered;
+    text-decoration: underline;
   }
 `;
 
@@ -172,6 +174,7 @@ export const SimpleButton = styled.button`
 export const DetailsRow = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 `;
 

@@ -95,6 +95,9 @@ function Orders() {
               <TextBold>Shipped Sunday</TextBold>
               <OrderImage />
             </OrderImageGroup>
+            <TextBlue>
+              God Of War Ragnarok | Launch Edition | PS4 Game (PlayStation 4)
+            </TextBlue>
             <ButtonGroup>
               <SimpleButton style={{ marginBottom: "20px" }}>
                 Track package
@@ -108,7 +111,9 @@ function Orders() {
           </DetailsRow>
         </OrderBody>
         <OrderFooter>
-          <TextBlue style={{ fontSize: "15px" }}>Archive Order</TextBlue>
+          <TextBlue style={{ fontSize: "14px", marginLeft: "20px" }}>
+            Archive Order
+          </TextBlue>
         </OrderFooter>
       </OrderItemWrapper>
     </Container>
