@@ -16,3 +16,4 @@
 
 configured jenkins cron job 
 build test v1
+build test v2
